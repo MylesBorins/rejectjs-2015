@@ -22,6 +22,18 @@ html
     .krang {
       background-image: url('images/krang.gif')
     }
+    
+    .marco {
+      background-image: url('images/Marco-Iacoboni.jpg')
+    }
+    
+    .giacomo {
+      background-image: url('images/giacomo.jpg')
+    }
+    
+    .crybaby {
+      background-image: url('images/crybaby.jpg')
+    }
 
   body
 
@@ -48,7 +60,7 @@ html
         img.headroom(src='images/happening.gif' alt='It is all happening!!!')
       
       section
-        h2.bullet What qualifies me to talk on empathy?
+        h2.bullet What qualifies me to talk about empathy?
         ul
           li.strikethrough I have an undergraduate degree in fine art
           +emptyLink()
@@ -74,25 +86,44 @@ html
         a.no-underline(href='https://www.thersa.org/discover/videos/rsa-animate/2010/05/rsa-animate---the-empathic-civilisation/')
           img(src='images/mirror.png' style='width:50%')
       
-      section
+      section(data-bespoke-backdrop='giacomo')
         h3 This was first discovered by Italian scientists in the 1990's
         h4 Giacomo Rizzolatti, a neuroscientist at the University of Parma, noticed this strange phenomenon with a monkey and some peanuts.
       
-      section
+      section(data-bespoke-backdrop='marco')
         h2 Marco Iacoboni,
         h4 Professor of Psychiatry and Biobehavioral Sciences, 
         h3 argued that mirror neurons are the neural basis 
         h2 of the human capacity for emotions such as empathy
       
-      
-      section
+      section(data-bespoke-backdrop='crybaby')
         h2 When a baby cries in a nursary
         h3 all the other babies join in
         h4 This is called Empathic Distress
         
       section
+        h2 Around two and a half years of age a child actually can begin to recognize themselves in the mirror
+        h3 This increase in selfhood goes hand in hand wth an incrase in empathic development
+        
+      seciton
+        h2 Around eight years of age a child learns about birth and death
+        h3 They learn about Vulnerability
+        
+      section
+        h2 Once you realize you have only one life, you can now feel others struggle
+        h3 You know that they have their own lives, you know their struggle
+        
+      section
         h2 While our ability to FEEL empathy may be soft-wired
         h2 Our ability to act on it is a learnt trait
+      
+      section
+        h3.bullet Theresa Wisman's Defining attributes of empathy
+        ul
+          li understand perspective
+          li stay out of judgement
+          li recognize what they are feeling
+          li communicate it back
       
       section
         h2 It turns out empathy was something I had to learn
@@ -109,11 +140,12 @@ html
         ul.no-bullets
           li Wiseman, Theresa. "A concept analysis of empathy." Journal of advanced nursing 23.6 (1996): 1162-1167.
           li Snow, Nancy E. "Empathy." American Philosophical Quarterly (2000): 65-78.
+          li https://www.thersa.org/discover/videos/rsa-shorts/2013/12/Brene-Brown-on-Empathy/
           li https://www.thersa.org/discover/videos/rsa-animate/2010/05/rsa-animate---the-empathic-civilisation/
+          li https://www.thersa.org/discover/videos/rsa-animate/2012/12/rsa-animate---the-power-of-outrospection/
+          li http://www.ted.com/talks/brene_brown_on_vulnerability
           li http://www.teachthought.com/teaching/how-to-teach-empathy/
           li http://www.nytimes.com/2006/01/10/science/10mirr.html?pagewanted=all
-         
-        
 
       //- section
       //-   h2 Bullet List
