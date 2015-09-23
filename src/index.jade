@@ -1,3 +1,6 @@
+mixin emptyLink()
+  li(style='display:none;')
+
 doctype html
 html
   head
@@ -7,65 +10,115 @@ html
 
     link(rel='stylesheet', type='text/css', href='build/build.css')
 
+  style.
+    .hello {
+      background-image: url('images/hello-tharr.gif')
+    }
+    
+    .funemployed {
+      background-image: url('images/funemployed.gif')
+    }
+    
+    .krang {
+      background-image: url('images/krang.gif')
+    }
+
   body
 
     article
 
       section
         h1 Why Empathy Matters
+        h3 With your host Myles Borins
+        a(href='https://twitter.com/thealphanerd')@thealphanerd
+        h4 RejectJS 2015
+      
+      section(data-bespoke-backdrop='hello')
+        h1 Hello There
+        
+      section
+        h1 My Name is Myles
+        img.headroom(src='images/me.jpg' alt='itsa me!' width='200px')
+      
+      section(data-bespoke-backdrop='funemployed')
+        h1 I am Currently Funemployed
 
       section
-        h2 Keyboard Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-keys">bespoke-keys</a>
-
+        h2 But I'm starting something exciting very soon.
+        img.headroom(src='images/happening.gif' alt='It is all happening!!!')
+      
       section
-        h2 Touch Interaction
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-touch">bespoke-touch</a>
-
-      section
-        h2 Responsive Slides
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-scale">bespoke-scale</a>
-
-      section
-        h2 Bullet List
-        h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+        h2 What qualifies me to talk on empathy?
         ul
-          li Bullet 1
-          li Bullet 2
-          li Bullet 3
-
+          +emptyLink()
+          li.strikethrough I have an undergraduate degree in fine art
+          +emptyLink()
+          li.strikethrough I have a masters degree in music
+          +emptyLink()
+          li I am a human being
+      
+      section(data-bespoke-backdrop='krang')
+        h1 Healthy brains are wired for empathy
+      
       section
-        h2 Syntax Highlighting
-        h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
-        pre
-          code.language-javascript.
-            bespoke.from('article', [
-              classes(),
-              keys(),
-              touch(),
-              bullets('li, .bullet')
-            ]);
-
-      section(data-bespoke-hash='named-route')
-        h2 Named Route
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
-        p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
-
-      section.emphatic-text(data-bespoke-backdrop='emphatic')
-        h2 Emphatic Slide!
-        h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
-
+        h3 One such phenomenon is a mirror neuron
+        h4 the same neuron will fires both when performing an action and when observing another doing the same action
+        a.no-underline(href='https://www.thersa.org/discover/videos/rsa-animate/2010/05/rsa-animate---the-empathic-civilisation/')
+          img(src='images/mirror.png' style='width:50%')
+      
       section
-        h2.bullet Just the beginning...
-        br
+        h2 Marco Iacoboni,
+        h4 Professor of Psychiatry and Biobehavioral Sciences, 
+        h3 argued that mirror neurons are the neural basis 
+        h2 of the human capacity for emotions such as empathy
+      
+      section
+        h2 When a baby cries in a nursary
+        h3 all the other babies join in
+        h4 This is called Empathic Distress
+        
+      section
+        h2 While our ability to FEEL empathy may be soft-wired
+        h2 Our ability to act on it is a learnt trait
+      
+      section
+        h2 It turns out empathy was something I had to learn
+      
+      section
+        h2 Types of Empathy
         ul
-          li Edit <a href="http://jade-lang.com/">Jade</a> markup in <em>'src/index.jade'</em>
-          li Edit <a href="http://learnboost.github.io/stylus/">Stylus</a> styles in <em>'src/styles/main.styl'</em>
-          li Edit JavaScript in <em>'src/scripts/main.js'</em>
-        br
-        ul
-          li
-            strong Enjoy! :)
-            a(href='http://twitter.com/markdalgleish')  -@markdalgleish
+          +emptyLink()
+          li For your customers
+          li For you co-workers
+          li For yourself
+
+      //- section
+      //-   h2 Bullet List
+      //-   h3.bullet Powered by <a href="https://github.com/markdalgleish/bespoke-bullets">bespoke-bullets</a>
+      //-   ul
+      //-     li Bullet 1
+      //-     li Bullet 2
+      //-     li Bullet 3
+      //-
+      //- section
+      //-   h2 Syntax Highlighting
+      //-   h3 Powered by <a href="http://twitter.com/LeaVerou">Lea Verou</a>'s <a href="https://github.com/LeaVerou/prism">Prism</a>
+      //-   pre
+      //-     code.language-javascript.
+      //-       bespoke.from('article', [
+      //-         classes(),
+      //-         keys(),
+      //-         touch(),
+      //-         bullets('li, .bullet')
+      //-       ]);
+
+      //- section(data-bespoke-hash='named-route')
+      //-   h2 Named Route
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-hash">bespoke-hash</a>
+      //-   p Look up! This route has been named with a <em>'data-bespoke-hash'</em> attribute.
+
+      //- section.emphatic-text(data-bespoke-backdrop='emphatic')
+      //-   h2 Emphatic Slide!
+      //-   h3 Powered by <a href="https://github.com/markdalgleish/bespoke-backdrop">bespoke-backdrop</a>
 
     script(src='build/build.js')
