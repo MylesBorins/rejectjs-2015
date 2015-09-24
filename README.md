@@ -15,3 +15,6 @@ Then, install dependencies and run the preview server:
 $ npm install && bower install
 $ gulp serve
 ```
+##License
+  * The content within this project (original text) is licensed under the Creative Commons Attribution-ShareAlike 4.0 International Public License
+  
